@@ -119,7 +119,7 @@ const Register = () => {
             to="/sign-in"
             className="underline hover:text-blue-700 hover:font-bold"
           >
-            Login
+            Signin
           </Link>
         </span>
         <button

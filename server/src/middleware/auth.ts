@@ -13,7 +13,7 @@ const verifyToken = (req: Request, res: Response, next: NextFunction) => {
   const token = req.cookies["auth_token"];
   if (!token) {
     return res.status(401).json({
-      message: "Unauthorized-1",
+      message: "Unauthorized",
     });
   }
   try {
@@ -22,7 +22,7 @@ const verifyToken = (req: Request, res: Response, next: NextFunction) => {
     next();
   } catch (err) {
     return res.status(401).json({
-      message: "Unauthorized-2",
+      message: "Unauthorized",
     });
   }
 };

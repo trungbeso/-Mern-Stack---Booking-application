@@ -1,8 +1,13 @@
 import { useFormContext } from "react-hook-form";
 import { hotelTypes } from "../../config/hotel-options-config";
+import type { HotelFormData } from "./ManageHotelForm";
 
 const TypeSection = () => {
-  const { register, watch } = useFormContext();
+  const {
+    register,
+    watch,
+    formState: { errors },
+  } = useFormContext<HotelFormData>();
   const typeWatch = watch("type");
 
   return (
@@ -28,6 +33,11 @@ const TypeSection = () => {
           </label>
         ))}
       </div>
+      {errors.type && (
+        <span className="text-red-500 text-sm gap-2">
+          {errors.type.message}
+        </span>
+      )}
     </div>
   );
 };

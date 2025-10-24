@@ -20,3 +20,27 @@ export const hotelTypes = [
   "Serviced Apartment",
   "Pet-friendly",
 ];
+
+export const holtelFacilities = [
+  "Free WiFi",
+  "Swimming Pool",
+  "Fitness Center",
+  "Spa",
+  "Restaurant",
+  "Bar",
+  "24-hour Front Desk",
+  "Room Service",
+  "Airport Shuttle",
+  "Parking",
+  "Pet-friendly",
+  "Laundry Service",
+  "Business Center",
+  "Conference Rooms",
+  "Family Rooms",
+  "Non-smoking Rooms",
+  "Air Conditioning",
+  "Beach Access",
+  "Golf Course",
+  "Tennis Courts",
+  "Kids' Club",
+];
